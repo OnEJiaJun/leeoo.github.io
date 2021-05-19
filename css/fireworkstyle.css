@@ -1,0 +1,14 @@
+/*body {*/
+  /*height: 200px;*/
+  /*margin: 10px;*/
+  /*background: black;*/
+/*}*/
+#fireworks {
+    /*焰火下面的内容距焰火的高度*/
+    height: 50px;
+    /*margin: 100px;*/
+    background: black;
+}
+canvas {
+  position: absolute;
+}

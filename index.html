@@ -1,1 +1,944 @@
-奥利奥，你好哇~
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--meta tag start-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="love">
+    <meta name="author" content="yijiajun">
+    <meta name="copyright" content="forWangQingQing">
+
+    <!--title-->
+    <title>Home</title>
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src=js/jquery-3.2.1.min.js></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src=js/bootstrap.min.js></script>
+    <script src=js/owl.carousel.min.js></script>
+    <script src=js/jquery.mixitup.min.js></script>
+    <script src=js/jquery.fancybox.min.js></script>
+    <script src=js/jquery.counterup.min.js></script>
+    <script src=js/waypoints.min.js></script>
+    <script src=js/jquery.magnific-popup.min.js></script>
+    <script src=js/countdown.js></script>
+    <script src=js/script.js></script>
+    <script src=js/axios-0.18.0.js></script>
+    <!--<script src=js/jquery.min.js></script>-->
+
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <!--<script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>-->
+    <!--<![endif]&ndash;&gt;-->
+
+
+    <!--浏览器上图标-->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!--整体样式-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--蝴蝶样式-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style3.css" media="screen" type="text/css"/>
+
+</head>
+<!--<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=17110575&auto=1&height=66"></iframe>-->
+<header>
+    <!--<script type="text/javascript">-->
+    <!--/*7Core-CN - 网页鼠标点击特效（爱心）*/-->
+    <!--!function (e, t, a) {function r() {for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y&#45;&#45;, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");requestAnimationFrame(r)}function n() {var t = "function" == typeof e.onclick && e.onclick;e.onclick = function (e) {t && t(), o(e)}}function o(e) {var a = t.createElement("div");a.className = "heart", s.push({el: a,x: e.clientX - 5,y: e.clientY - 5,scale: 1,alpha: 1,color: c()}), t.body.appendChild(a)}function i(e) {var a = t.createElement("style");a.type = "text/css";try {a.appendChild(t.createTextNode(e))} catch (t) {a.styleSheet.cssText = e}t.getElementsByTagName("head")[0].appendChild(a)}function c() {return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"}var s = [];e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {setTimeout(e, 1e3 / 60)}, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), n(), r()}(window, document);-->
+    <!--</script>-->
+    <script type="text/javascript">
+        /*7Core-CN - 网页鼠标点击特效（爱心）*/
+        !function (e, t, a) {
+            function r() {
+                for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
+                requestAnimationFrame(r)
+            }
+
+            function n() {
+                var t = "function" == typeof e.onclick && e.onclick;
+                e.onclick = function (e) {
+                    t && t(), o(e)
+                }
+            }
+
+            function o(e) {
+                var a = t.createElement("div");
+                a.className = "heart", s.push({
+                    el: a,
+                    x: e.clientX - 5,
+                    y: e.clientY - 5,
+                    scale: 1,
+                    alpha: 1,
+                    color: c()
+                }), t.body.appendChild(a)
+            }
+
+            function i(e) {
+                var a = t.createElement("style");
+                a.type = "text/css";
+                try {
+                    a.appendChild(t.createTextNode(e))
+                } catch (t) {
+                    a.styleSheet.cssText = e
+                }
+                t.getElementsByTagName("head")[0].appendChild(a)
+            }
+
+            function c() {
+                return "rgb(" + ~~(255) + "," + ~~(0) + "," + ~~(0) + ")"
+            }
+
+            var s = [];
+            e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {
+                setTimeout(e, 1e3 / 60)
+            }, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), n(), r()
+        }(window, document);
+    </script>
+
+    <!-- Start Navigation -->
+    <div id="masthead" class="site-header menu">
+        <div class="container">
+            <!--首页标记-->
+            <!--<div class="site-branding">-->
+            <!--<div id="site-identity">-->
+            <!--<a href="index.html" class="logo"><img src="images/logo.jpg" width="179" alt="logo" class="col-xs-4"></a>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--首页搜索-->
+            <!--<div class="col-xs-12">-->
+            <!--<div class="header-nav-search">-->
+            <!--<div class="header-search">-->
+            <!--<i class="fa fa-search top-search"></i>-->
+            <!--<div class="search-popup">-->
+            <!--<form role=search action="search" class="search-wrapper">-->
+            <!--<div>-->
+            <!--<input type="text" name="search" placeholder="不用搜了，没人比我跟喜欢你">-->
+            <!--<input type="submit" name="button" class="pop-search">-->
+            <!--</div>-->
+            <!--</form>-->
+            <!--<div class="search-overlay"></div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="toggle-button">-->
+            <!--<span></span>-->
+            <!--<span></span>-->
+            <!--<span></span>-->
+            <!--</div>-->
+            <!--<div id="main-navigation">-->
+            <!--<nav class="main-navigation">-->
+            <!--<div class="close-icon">-->
+            <!--<i class="fa fa-close"></i>-->
+            <!--</div>-->
+            <!--<ul>-->
+            <!--<li><a href="#">Home</a></li>-->
+            <!--<li><a href="stock.html">About</a></li>-->
+            <!--<li><a href="#">Contact</a></li>-->
+            <!--</ul>-->
+            <!--</nav>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+
+
+    <!--焰火展示-->
+    <!--<div class="banner-slider">-->
+    <!--<div class="main-slider owl-carousel owl-theme">-->
+    <!--<div class="main-slider owl-carousel owl-theme">-->
+    <div class="top-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="fireworks" class="col-xs-12">
+                    <div style="text-align:center;clear:both;"></div>
+                    <link rel="stylesheet" href="css/fireworkstyle.css">
+                    <!--焰火-->
+                    <canvas></canvas>
+                    <canvas></canvas>
+                    <canvas></canvas>
+                    <script src="js/index.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--</div>-->
+    <!--</div>-->
+    <!--暂时没用-- 最上面那个>
+    <!--<div class="top-header">-->
+    <!--<div class="container">-->
+    <!--<div class="row">-->
+    <!--<div class="col-md-5 col-sm-5 col-xs-5">-->
+    <!--<ul class="tophead-link">-->
+    <!--<li><a href="about.html"><i > Welcome to Edustar center !</i></a></li>-->
+    <!--</ul>-->
+    <!--</div>-->
+
+    <!--<div class="col-md-7 col-sm-7 col-xs-7 tophead-right">-->
+    <!--<ul class="tophead-link">-->
+    <!--<li><a href="tel:9856055360"><i class="fa fa-mobile" aria-hidden="true"></i>9856055260</a>-->
+    <!--</li>-->
+    <!--<li><a href="#"><i class="fa fa-lock" aria-hidden="true"></i> Sign</a>-->
+    <!--</li>-->
+    <!--<li><a href="#"><i class="fa fa-key" aria-hidden="true"></i> Register</a>-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</div>-->
+
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+</header>
+<body>
+<!--暂时没用-->
+<!--轮播图-->
+<!--<div class="banner-slider">-->
+<!--<div class="main-slider owl-carousel owl-theme">-->
+<!--<div class="slider-items" style="background-image:url(images/slider/1.jpg);">-->
+<!--<div class="slider-overlay"></div>-->
+<!--<div class="slider-content">-->
+<!--<div class="carousel-caption caption-center">-->
+<!--<div class="content">-->
+<!--<h2>Education and Training Center</h2>-->
+<!--<p>Edustar is world top education consultancy ipsum dolor sit amet, consectetur adipiscing elit.-->
+<!--Cras interdum ante vel aliquet euismod.</p>-->
+<!--<a href="#" class="btn btn-primary">learn more</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="slider-items" style="background-image:url(images/slider/2.jpg);">-->
+<!--<div class="slider-overlay"></div>-->
+<!--<div class="slider-content">-->
+<!--<div class="carousel-caption caption-center">-->
+<!--<div class="content">-->
+<!--<h2>Education and Training Center</h2>-->
+<!--<p>Edustar is world top education consultancy ipsum dolor sit amet, consectetur adipiscing elit.-->
+<!--Cras interdum ante vel aliquet euismod.</p>-->
+<!--<a href="#" class="btn btn-primary">learn more</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+
+<section class="slide-bottom-sec">
+    <div class="container">
+        <div class="slide-bottom">
+            <div class="row">
+                <div class="col-md-4 modern-class">
+                    <div class="modern-inner">
+                        <!--===========================================================================================              -->
+
+                        <!--=====================================================================================================                    -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome section pdb0 clear">
+            <div class="row">
+                <div class="col-md-12">
+                    <!--<div class="title">-->
+                    <!--<h2>Welcome to edustar center</h2>-->
+                    <!--</div>-->
+                    <!--========================================================================================================================            -->
+                    <!--<div class="welcome-inner">-->
+                    <div class="row">
+                        <!--<div class="carousel-caption caption-center">-->
+                        <div class="col-md-12 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace" class="svg-defs">
+  <defs>
+
+    <pattern id='image' width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <image xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/78881/pattern_141.gif" width="100" height="100" preserveAspectRatio="none"></image>
+    </pattern>
+
+    <g id="shape-butterfly-1">
+      <path class="path" fill="" clip-rule="evenodd" d="M8.65,2.85c0.934-0.2,2.15-0.333,3.65-0.4c1.534-0.1,2.667-0.083,3.4,0.05
+		c1.533,0.267,3.45,0.767,5.75,1.5c2.466,0.8,4.35,1.617,5.65,2.45c2.066,1.2,3.883,2.383,5.45,3.55c2.567,2.1,4.35,3.8,5.35,5.1
+		l2.1,2.5c0.933,1.167,1.517,1.983,1.75,2.45c0.333,0.767,1.083,2.117,2.25,4.05c0.233,0.467,0.717,1.683,1.45,3.65
+		c0.733,2.067,1.2,3.45,1.4,4.15c0.467,1.733,0.917,3.767,1.35,6.1l0.4,3.85l-0.25-3.4c-0.6-5.967-1.267-10.25-2-12.85
+		c-0.733-2.434-2.167-5.467-4.3-9.1c-0.966-1.667-1.566-3-1.8-4c-0.233-0.933-0.1-1.267,0.4-1c1.3,0.733,2.917,3.867,4.85,9.4
+		c1.667,4.7,2.85,11.2,3.55,19.5c0.567,6.934,0.667,11.917,0.3,14.95l0.2,0.05c0.231,0,0.348-0.05,0.35-0.15v0.05l0.1,0.05v27.4
+		c-0.032-0.018-0.065-0.035-0.1-0.05v-0.05c-0.7,0.267-0.983,0.117-0.85-0.45c0.067-0.333,0.017-0.817-0.15-1.45
+		c-0.2-0.6-0.316-0.983-0.35-1.15l-0.5-1.65c-0.533-2.967-0.833-5.034-0.9-6.2c-0.1-1.533-0.133-2.4-0.1-2.6
+		c0-0.933,0.167-1.667,0.5-2.2c0.567-0.9,0.684-1.75,0.35-2.55c-0.167-0.367-0.367-0.6-0.6-0.7c-0.333-0.133-0.517,0.283-0.55,1.25
+		c-0.033,1.533-0.167,2.9-0.4,4.1c-0.1,2.3-0.267,3.684-0.5,4.15c-0.333,0.667-1.25,2.95-2.75,6.85c-1.167,2.8-2.233,4.817-3.2,6.05
+		c-0.9,1.2-1.583,2.1-2.05,2.7c-0.8,1-1.434,1.667-1.9,2c-2.067,1.333-3.633,2.067-4.7,2.2c-3.033,0.267-4.95,0.317-5.75,0.15
+		c-0.8-0.167-1.383-0.217-1.75-0.15c-0.533,0.1-1.033,0.45-1.5,1.05c-0.5,0.667-1.217,1.284-2.15,1.85
+		c-0.934,0.567-1.85,0.934-2.75,1.1c-2.467,0.433-4.45,0.25-5.95-0.55c-0.7-0.4-1.467-1.15-2.3-2.25c-0.6-0.867-1.033-1.567-1.3-2.1
+		c-0.267-0.667-0.483-1.483-0.65-2.45c-0.3-1.467-0.383-2.717-0.25-3.75c0.267-1.9,0.45-3.05,0.55-3.45
+		c0.233-1.233,0.566-2.333,1-3.3C9.25,77.45,9.767,76.4,10,76c0.667-1.233,1.55-2.583,2.65-4.05c1.1-1.434,2.184-2.583,3.25-3.45
+		c0.367-0.3,1.15-0.867,2.35-1.7c0.767-0.566,1.917-1.25,3.45-2.05c1.733-0.933,3.267-1.633,4.6-2.1
+		c2.133-0.733,4.534-1.467,7.2-2.2c0.467-0.1,1.517-0.3,3.15-0.6c0.967-0.233,0.4-0.4-1.7-0.5c-2.434-0.1-4.534-0.3-6.3-0.6
+		c-1.566-0.267-3.383-0.7-5.45-1.3c-2.8-0.8-4.467-1.317-5-1.55c-1.567-0.667-3.2-1.75-4.9-3.25c-1.733-1.533-3-3.1-3.8-4.7
+		c-0.533-1.067-0.967-2.434-1.3-4.1c-0.233-1.067-0.3-2.133-0.2-3.2c0.133-0.833,0.183-1.3,0.15-1.4v-0.6
+		c-2.467-3.233-3.983-5.433-4.55-6.6c-0.533-1.033-0.883-1.833-1.05-2.4c-0.3-0.867-0.466-1.85-0.5-2.95
+		c-0.033-2.367,0.034-4.117,0.2-5.25c0.3-1.034,0.483-1.8,0.55-2.3c0.167-0.867,0.034-1.533-0.4-2c-0.6-0.7-1.133-1.517-1.6-2.45
+		c-0.566-1.133-0.833-2.117-0.8-2.95c0.033-1.333,0.167-2.367,0.4-3.1c0.367-1.267,1.05-2.267,2.05-3
+		C4.417,4.25,6.483,3.317,8.65,2.85z"/>
+    <g>
+
+  </defs>
+</svg>
+                            <div style="text-align:center;clear:both;position:absolute;top:30px;left:260px;z-index:999">
+                                <script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+                                <script src="/follow.js" type="text/javascript"></script>
+                            </div>
+                            <section class="background"></section>
+
+                            <section class="scene3d">
+
+                                <div class="cube skybox">
+                                    <var class="scale">
+                                        <figure class="face front"></figure>
+                                        <figure class="face back"></figure>
+                                        <figure class="face right"></figure>
+                                        <figure class="face left"></figure>
+                                        <figure class="face top"></figure>
+                                        <figure class="face bottom"></figure>
+                                    </var>
+                                </div>
+
+                                <div class="butterfly_container">
+                                    <var class="rotate3d">
+                                        <var class="scale">
+                                            <var class="translate3d">
+                                                <var class="translate3d-1">
+                                                    <figure class="butterfly">
+                                                        <svg class="wing left" viewBox="0 0 50 100"
+                                                             class="icon shape-codepen">
+                                                            <use class="left" xlink:href="#shape-butterfly-1"></use>
+                                                        </svg>
+                                                        <svg class="wing right" viewBox="0 0 50 100"
+                                                             class="icon shape-codepen">
+                                                            <use class="left" xlink:href="#shape-butterfly-1"></use>
+                                                        </svg>
+                                                    </figure>
+                                                </var>
+                                            </var>
+                                        </var>
+                                    </var>
+                                </div>
+
+                                <div class="butterfly_container"
+                                     style="margin-top: -150px; margin-left: 140px;
+              -webkit-animation-duration: 5s;
+              -moz-animation-duration: 5s;
+              -ms-animation-duration: 5s;
+              -o-animation-duration: 5s;
+              animation-duration: 5s;">
+                                    <var class="rotate3d">
+                                        <var class="scale">
+                                            <var class="translate3d">
+                                                <var class="translate3d-1">
+                                                    <figure class="butterfly">
+                                                        <svg class="wing left" viewBox="0 0 50 100"
+                                                             style="-webkit-animation-duration: .75s;
+                  -moz-animation-duration: .75s;
+                  -ms-animation-duration: .75s;
+                  -o-animation-duration: .75s;
+                  animation-duration: .75s;">
+                                                            <use class="left" xlink:href="#shape-butterfly-1"></use>
+                                                        </svg>
+                                                        <svg class="wing right" viewBox="0 0 50 100"
+                                                             style="-webkit-animation-duration: .75s;
+                  -moz-animation-duration: .75s;
+                  -ms-animation-duration: .75s;
+                  -o-animation-duration: .75s;
+                  animation-duration: .75s;">
+                                                            <use class="left" xlink:href="#shape-butterfly-1"></use>
+                                                        </svg>
+                                                    </figure>
+                                                </var>
+                                            </var>
+                                        </var>
+                                    </var>
+                                </div>
+
+                                <div class="butterfly_container scale_half"
+                                     style="margin-top: -10px; margin-left: 50px;
+              -webkit-animation-duration: 5s;
+              -moz-animation-duration: 5s;
+              -ms-animation-duration: 5s;
+              -o-animation-duration: 5s;
+              animation-duration: 5s;">
+                                    <var class="rotate3d">
+                                        <var class="scale">
+                                            <var class="translate3d">
+                                                <var class="translate3d-1">
+                                                    <figure class="butterfly">
+                                                        <svg class="wing left" viewBox="0 0 50 100"
+                                                             style="-webkit-animation-duration: .75s;
+                  -moz-animation-duration: .75s;
+                  -ms-animation-duration: .75s;
+                  -o-animation-duration: .75s;
+                  animation-duration: .75s;">
+                                                            <use class="left" xlink:href="#shape-butterfly-1"></use>
+                                                        </svg>
+                                                        <svg class="wing right" viewBox="0 0 50 100"
+                                                             style="-webkit-animation-duration: .75s;
+                  -moz-animation-duration: .75s;
+                  -ms-animation-duration: .75s;
+                  -o-animation-duration: .75s;
+                  animation-duration: .75s;">
+                                                            <use class="left" xlink:href="#shape-butterfly-1"></use>
+                                                        </svg>
+                                                    </figure>
+                                                </var>
+                                            </var>
+                                        </var>
+                                    </var>
+                                </div>
+
+                                <div class="butterfly_container scale_half"
+                                     style="margin-top: 20px;
+              -webkit-animation-duration: 20s;
+              -moz-animation-duration: 20s;
+              -ms-animation-duration: 20s;
+              -o-animation-duration: 20s;
+              animation-duration: 20s;">
+                                    <var class="rotate3d">
+                                        <var class="scale">
+                                            <var class="translate3d">
+                                                <var class="translate3d-1">
+                                                    <figure class="butterfly">
+                                                        <svg class="wing left" viewBox="0 0 50 100"
+                                                             style="-webkit-animation-duration: 1s;
+                  -moz-animation-duration: 1s;
+                  -ms-animation-duration: 1s;
+                  -o-animation-duration: 1s;
+                  animation-duration: 1s;">
+                                                            <use class="left" xlink:href="#shape-butterfly-1"></use>
+                                                        </svg>
+                                                        <svg class="wing right" viewBox="0 0 50 100"
+                                                             style="-webkit-animation-duration: 1s;
+                  -moz-animation-duration: 1s;
+                  -ms-animation-duration: 1s;
+                  -o-animation-duration: 1s;
+                  animation-duration: 1s;">
+                                                            <use class="left" xlink:href="#shape-butterfly-1"></use>
+                                                        </svg>
+                                                    </figure>
+                                                </var>
+                                            </var>
+                                        </var>
+                                    </var>
+                                </div>
+
+                                <div class="butterfly_container scale_half"
+                                     style="margin-top: 100px; margin-left: 50px;
+              -webkit-animation-duration: 20s;
+              -moz-animation-duration: 20s;
+              -ms-animation-duration: 20s;
+              -o-animation-duration: 20s;
+              animation-duration: 20s;">
+                                    <var class="rotate3d">
+                                        <var class="scale">
+                                            <var class="translate3d">
+                                                <var class="translate3d-1">
+                                                    <figure class="butterfly">
+                                                        <svg class="wing left" viewBox="0 0 50 100"
+                                                             style="-webkit-animation-duration: 1.2s;
+                  -moz-animation-duration: 1.2s;
+                  -ms-animation-duration: 1.2s;
+                  -o-animation-duration: 1.2s;
+                  animation-duration: 1.2s;">
+                                                            <use class="left" xlink:href="#shape-butterfly-1"></use>
+                                                        </svg>
+                                                        <svg class="wing right" viewBox="0 0 50 100"
+                                                             style="-webkit-animation-duration: 1.2s;
+                  -moz-animation-duration: 1.2s;
+                  -ms-animation-duration: 1.2s;
+                  -o-animation-duration: 1.2s;
+                  animation-duration: 1.2s;">
+                                                            <use class="left" xlink:href="#shape-butterfly-1"></use>
+                                                        </svg>
+                                                    </figure>
+                                                </var>
+                                            </var>
+                                        </var>
+                                    </var>
+                                </div>
+
+                                <div class="butterfly_container scale_third"
+                                     style="margin-top: 150px;
+              -webkit-animation-duration: 20s;
+              -moz-animation-duration: 20s;
+              -ms-animation-duration: 20s;
+              -o-animation-duration: 20s;
+              animation-duration: 20s;">
+                                    <var class="rotate3d">
+                                        <var class="scale">
+                                            <var class="translate3d">
+                                                <var class="translate3d-1">
+                                                    <figure class="butterfly">
+                                                        <svg class="wing left" viewBox="0 0 50 100"
+                                                             style="-webkit-animation-duration: .35s;
+                  -moz-animation-duration: .35s;
+                  -ms-animation-duration: .35s;
+                  -o-animation-duration: .35s;
+                  animation-duration: .35s;">
+                                                            <use class="left" xlink:href="#shape-butterfly-1"></use>
+                                                        </svg>
+                                                        <svg class="wing right" viewBox="0 0 50 100"
+                                                             style="-webkit-animation-duration: .35s;
+                  -moz-animation-duration: .35s;
+                  -ms-animation-duration: .53s;
+                  -o-animation-duration: .35s;
+                  animation-duration: .35s;">
+                                                            <use class="left" xlink:href="#shape-butterfly-1"></use>
+                                                        </svg>
+                                                    </figure>
+                                                </var>
+                                            </var>
+                                        </var>
+                                    </var>
+                                </div>
+
+                                <div class="butterfly_container scale_third"
+                                     style="margin-top: -250px; margin-left: 300px;
+              -webkit-animation-duration: 4s;
+              -moz-animation-duration: 4s;
+              -ms-animation-duration: 4s;
+              -o-animation-duration: 4s;
+              animation-duration: 4s;">
+                                    <var class="rotate3d">
+                                        <var class="scale">
+                                            <var class="translate3d">
+                                                <var class="translate3d-1">
+                                                    <figure class="butterfly">
+                                                        <svg class="wing left" viewBox="0 0 50 100"
+                                                             style="-webkit-animation-duration: .45s;
+                  -moz-animation-duration: .45s;
+                  -ms-animation-duration: .45s;
+                  -o-animation-duration: .45s;
+                  animation-duration: .45s;">
+                                                            <use class="left" xlink:href="#shape-butterfly-1"></use>
+                                                        </svg>
+                                                        <svg class="wing right" viewBox="0 0 50 100"
+                                                             style="-webkit-animation-duration: .45s;
+                  -moz-animation-duration: .45s;
+                  -ms-animation-duration: .45s;
+                  -o-animation-duration: .45s;
+                  animation-duration: .45s;">
+                                                            <use class="left" xlink:href="#shape-butterfly-1"></use>
+                                                        </svg>
+                                                    </figure>
+                                                </var>
+                                            </var>
+                                        </var>
+                                    </var>
+                                </div>
+
+                            </section>
+                        </div></div></div>
+</body>
+
+</html>
+<script src='js/TweenMax1.min.js'></script>
+<script src='js/DrawSVGPlugin1.min.js'></script>
+<script src="js/script1.js"></script>
+</div>
+</div>
+<!--</div>-->
+<!--<div class="col-md-4">-->
+<!--<div class="feature_img">-->
+<!--<img src="images/men.png" class="img-responsive" alt=""/>-->
+<!--</div>-->
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!--section中的属性可以将焰火下面的东西往下移-->
+<section class="popular-course section grey-background">
+    <div class="container">
+        <!--<div class="title sec-title">-->
+        <!--</div>-->
+
+        <div class="title sec-title">
+            <h2>过去短暂的时光</h2>
+            <p>所谓最好的时光，不是因为它美好无匹，而是因为它永恒失落了；我们只能用怀念来召唤它，所以才显得无比美好。但愿所有走过的岁月，都会在记忆里沉淀成最好的时光。</p>
+        </div>
+    </div>
+</section>
+
+<!--注册-->
+<!--<section class="coaching section pdb0">-->
+<!--<div class="container">-->
+<!--<div class="coaching-img">-->
+<!--<img src="images/course/coaching.jpg" alt="image" class="img-responsive">-->
+<!--</div>-->
+<!--<div class="row">-->
+<!--<div class="col-md-5 offset-sm-0 offset-md-2">-->
+<!--<div class="count-inner">-->
+<!--<div class="title">-->
+<!--<h2>Get The coaching Training By Jhone Doe <span><a href="#">For Free</a></span></h2>-->
+<!--<h6>Aenean libero nune</h6>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="countdown-time">-->
+<!--<div id="deal-countdown" class="countdown">-->
+<!--<span data-value="0" class="days"><span class="value">0</span><b>Days</b></span>-->
+<!--<span class="hours"><span class="value">7</span><b>Hours</b></span>-->
+<!--<span class="minutes"><span class="value">29</span><b>Mins</b></span>-->
+<!--<span class="seconds"><span class="value">13</span><b>Secs</b></span>-->
+<!--</div>-->
+<!--<span class="deal-end-date" style="display:none;">2018-12-31</span>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col-md-5">-->
+<!--<div class="coaching-sign">-->
+<!--<form>-->
+<!--<div class="title sec-title">-->
+<!--<h2>Sign Up Now</h2>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<input type="text" name="name" placeholder="Enter your Name">-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<input type="text" name="email" placeholder="Enter your Email">-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<input type="text" name="number" placeholder="Enter your Number">-->
+<!--</div>-->
+<!--<button class="button btn btn-primary">Get It</button>-->
+<!--</form>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+<!--<section class="lecture section grey-background pdb0">-->
+
+
+<!--<section class="homepage-event section">-->
+<!--<div class="container">-->
+<!--<div class="title sec-title">-->
+<!--<h2>Event Upcoming</h2>-->
+<!--<p>Edustar is world top education consultancy ipsum dolor sit amet, consectetur adipiscing elit. Cras-->
+<!--interdum ante vel aliquet euismod.</p>-->
+<!--</div>-->
+<!--<div class="row">-->
+<!--<div class="col-md-8 ">-->
+<!--<div class="row">-->
+<!--<div class="event-block">-->
+<!--<ul>-->
+<!--<li><span class="event-date">24</span>-->
+<!--<span class="event-month">May</span></li>-->
+<!--<li>-->
+<!--<div>-->
+<!--<span class="event-time">8:00 am - 5:00 pm Cicago , USA</span>-->
+<!--<h4><a href="#">Comapare Prices and find the best accessories</a></h4>-->
+<!--<p>Every new computer that broughts home from the store has an operating system-->
+<!--installed onto it. But what must new computer .</p>-->
+<!--</div>-->
+<!--</li>-->
+<!--<li>-->
+<!--<button class="button btn btn-primary">apply</button>-->
+<!--</li>-->
+<!--</ul>-->
+<!--<ul>-->
+<!--<li><span class="event-date">26</span>-->
+<!--<span class="event-month">JULY</span></li>-->
+<!--<li>-->
+<!--<div>-->
+<!--<span class="event-time">8:00 am - 5:00 pm Cicago , USA</span>-->
+<!--<h4><a href="#">Comapare Prices and find the best accessories</a></h4>-->
+<!--<p>Every new computer that broughts home from the store has an operating system-->
+<!--installed onto it. But what must new computer .</p>-->
+<!--</div>-->
+<!--</li>-->
+<!--<li>-->
+<!--<button class="button btn btn-primary">apply</button>-->
+<!--</li>-->
+<!--</ul>-->
+<!--<ul>-->
+<!--<li><span class="event-date">27</span>-->
+<!--<span class="event-month">AUG</span></li>-->
+<!--<li>-->
+<!--<div>-->
+<!--<span class="event-time">8:00 am - 5:00 pm Cicago , USA</span>-->
+<!--<h4><a href="#">Comapare Prices and find the best accessories</a></h4>-->
+<!--<p>Every new computer that broughts home from the store has an operating system-->
+<!--installed onto it. But what must new computer .</p>-->
+<!--</div>-->
+<!--</li>-->
+<!--<li>-->
+<!--<button class="button btn btn-primary">apply</button>-->
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col-md-4">-->
+<!--<div class="event-sidebar">-->
+
+<!--<h4>What You Get ?</h4>-->
+<!--<p>Every new computer that broughts home from the store has an operating system installed onto it.-->
+<!--But what must new computer</p>-->
+<!--<ul>-->
+<!--<li><a href="#">Eagesta torquents</a></li>-->
+<!--<li><a href="#">habitasas aenean fusc</a></li>-->
+<!--<li><a href="#">Eagesta torquents</a></li>-->
+<!--<li><a href="#">habitasas aenean fusc</a></li>-->
+<!--<li><a href="#">Eagesta torquents</a></li>-->
+<!--<li><a href="#">Non am amec pontentic</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+<!--<section class="news-update section">-->
+<!--<div class="row">-->
+<!--<div class="container">-->
+<!--<div class="title sec-title">-->
+<!--<h2>Edustar's News Updates</h2>-->
+<!--<p>Edustar is world top education consultancy ipsum dolor sit amet, consectetur adipiscing elit. Cras-->
+<!--interdum ante vel aliquet euismod.</p>-->
+<!--</div>-->
+<!--<div class="news-update-inner">-->
+<!--<div class="news-carousel owl-carousel owl-theme">-->
+<!--<div class="news-item">-->
+<!--<div class="news-update-img ">-->
+<!--<img class="img-responsive " src="images/course/1.jpg " alt="image"/>-->
+<!--</div>-->
+<!--<div class="news-update-detail ">-->
+<!--<div class="news-update-date">-->
+<!--<p>December 17, 2017</p>-->
+<!--</div>-->
+<!--<h3><a href="#" title="Details ">Amazing tips will motivate today</a></h3>-->
+<!--<p>Lorem ipsum dolor amet, constur ading id elit. Phasellus tincidunt mauris id tortor-->
+<!--iaculis, ut mollis mi constur ading sagittis.</p>-->
+<!--<div class="news-btn">-->
+<!--<a href="#" class="btn btn-primary">learn more</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="news-item">-->
+<!--<div class="news-update-img ">-->
+<!--<img class="img-responsive " src="images/course/1.jpg " alt="image"/>-->
+<!--</div>-->
+<!--<div class="news-update-detail ">-->
+<!--<div class="news-update-date">-->
+<!--<p>December 17, 2017</p>-->
+<!--</div>-->
+<!--<h3><a href="#" title="Details ">Amazing tips will motivate today</a></h3>-->
+<!--<p>Lorem ipsum dolor amet, constur ading id elit. Phasellus tincidunt mauris id tortor-->
+<!--iaculis, ut mollis mi constur ading sagittis.</p>-->
+<!--<div class="news-btn">-->
+<!--<a href="#" class="btn btn-primary">learn more</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="news-item">-->
+
+<!--<div class="news-update-img  ">-->
+<!--<img class="img-responsive " src="images/course/2.jpg " alt="image"/>-->
+<!--</div>-->
+<!--<div class="news-update-detail ">-->
+<!--<div class="news-update-date">-->
+<!--<p>December 17, 2017</p>-->
+<!--</div>-->
+<!--<h3><a href=" #" title="Details ">Amazing tips will motivate today</a></h3>-->
+<!--<p>Lorem ipsum dolor amet, constur ading id elit. Phasellus tincidunt mauris id tortor-->
+<!--iaculis, ut mollis mi constur ading sagittis.</p>-->
+<!--<div class="news-btn">-->
+<!--<a href="#" class="btn btn-primary">learn more</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="news-item">-->
+<!--<div class="news-update-img ">-->
+<!--<img class="img-responsive " src="images/course/1.jpg " alt="image"/>-->
+<!--</div>-->
+<!--<div class="news-update-detail ">-->
+<!--<div class="news-update-date">-->
+<!--<p>December 17, 2017</p>-->
+<!--</div>-->
+<!--<h3><a href="#" title="Details ">Amazing tips will motivate today</a></h3>-->
+<!--<p>Lorem ipsum dolor amet, constur ading id elit. Phasellus tincidunt mauris id tortor-->
+<!--iaculis, ut mollis mi constur ading sagittis.</p>-->
+<!--<div class="news-btn">-->
+<!--<a href="#" class="btn btn-primary">learn more</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+<!--edu-counter-->
+
+<!--最底部黑色数据统计-->
+<!--<section class="edu-counter section" style="background-image:url(images/background/common.jpg);">-->
+<!--<div class="edu-counter-overlay"></div>-->
+<!--<div class="container ">-->
+<!--<div class="row clearfix ">-->
+<!--&lt;!&ndash;Column&ndash;&gt;-->
+<!--<div class="col-md-3 col-sm-6 ">-->
+<!--<div class="counter-area ">-->
+<!--<h2 class="counter ">9300</h2>-->
+<!--<h3>Shield</h3>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="col-md-3 col-sm-6 ">-->
+<!--<div class="counter-area ">-->
+<!--<h2 class="counter ">10111</h2>-->
+<!--<h3>Total trophy</h3>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="col-md-3 col-sm-6 ">-->
+<!--<div class="counter-area ">-->
+<!--<h2 class="counter ">9575</h2>-->
+<!--<h3>Online students</h3>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="col-md-3 col-sm-6 ">-->
+<!--<div class="counter-area ">-->
+<!--<h2 class="counter ">7864</h2>-->
+<!--<h3>booked</h3>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+<!--&lt;!&ndash; counter end &ndash;&gt;-->
+
+<!-- HAPPY CLIENTS -->
+<!-- happyclient end -->
+
+<!--&lt;!&ndash; Stat Footer &ndash;&gt;-->
+<!--<footer>-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-md-4 col-sm-12 col-xs-12">-->
+<!--<div class="footer-widget">-->
+<!--<h2>Edustar</h2>-->
+<!--<div class="widget-content">-->
+<!--<div class="text">Lorem ipsum dolor sit amet, consects adipiscing elit enean commodo ligula.</div>-->
+<!--<address>-->
+<!--<p><i class="fa fa-map-marker"></i> kathmandu, nepal</p>-->
+<!--<p><i class="fa fa-phone"></i>+977-9856055360</p>-->
+<!--<p><i class="fa fa-envelope"></i> khnl.prem@gmail.com</p>-->
+<!--</address>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="col-md-5 col-sm-6 col-xs-12">-->
+<!--<div class="footer-widget links-widget">-->
+<!--<h2>Explore</h2>-->
+
+<!--<div class="row">-->
+<!--<div class="col-md-6 col-sm-6 col-sm-12">-->
+<!--<ul>-->
+<!--<li><a href="#">home</a></li>-->
+<!--<li><a href="#">about</a></li>-->
+<!--<li><a href="#">services</a></li>-->
+<!--<li><a href="#">projects</a></li>-->
+<!--<li><a href="#">contact</a></li>-->
+
+<!--</ul>-->
+<!--</div>-->
+<!--<div class="col-md-6 col-sm-6 col-sm-12">-->
+<!--<ul>-->
+<!--<li><a href="#">News</a></li>-->
+<!--<li><a href="#">Trade</a></li>-->
+<!--<li><a href="#">Investment</a></li>-->
+<!--<li><a href="#">projects</a></li>-->
+<!--<li><a href="#">contact</a></li>-->
+
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="col-md-3 col-sm-6 col-xs-12">-->
+<!--<div class="footer-widget subscribe-widget">-->
+<!--<h2>Newsletter</h2>-->
+<!--<div class="widget-content">-->
+<!--<div class="text">Lorem ipsum dolor sit amet, adipiscing </div>-->
+<!--<div class="newsletter-form">-->
+<!--<form>-->
+<!--<div class="form-group">-->
+<!--<input type="email" name="email" value="" placeholder="Email Address..." required>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<button type="submit" class="btn btn-primary button">suscribe now<span class="btn-shape"></span></button>-->
+<!--</div>-->
+<!--</form>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--</footer>-->
+<!--&lt;!&ndash;Footer Bottom&ndash;&gt;-->
+<!--<div class="footer-bottom">-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-md-6 col-sm-6">-->
+<!--<div class="text text-left">Copyright &copy; 2018.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></div>-->
+<!--</div>-->
+<!--<div class="col-md-6 col-sm-6">-->
+<!--<ul class="social-links text-right">-->
+<!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+<!--<li class="active"><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+<!--<li><a href="#"><i class="fa fa-youtube"></i></a></li>-->
+<!--<li><a href="#"><i class="fa fa-instagram"></i></a></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; scroll top &ndash;&gt;-->
+<!--<a class="scroll-top fa fa-angle-up" href="javascript:void(0)"></a>-->
+<!--&lt;!&ndash; srolltop end &ndash;&gt;-->
+
+
+<!-- 引入ElementUI样式 -->
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- 引入ElementUI组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+<script>
+    function open1() {
+        alert("你没有访问权限")
+    }
+</script>
+
+
+<!--==============================================================================-->
+<!--音乐-->
+<audio autoplay="autoplay" controls="controls">
+    <!--<source src="song.ogg" type="audio/ogg" />-->
+    <source src="遥不可及的你+-+花粥.mp3" type="audio/mpeg"/>
+</audio>
+
+</body>
+</html>
